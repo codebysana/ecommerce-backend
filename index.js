@@ -20,11 +20,11 @@ const morgan = require("morgan");
 const cors = require("cors");
 const Product = require("./models/productModel");
 
+const path = require("path");
+
 const stripe = require("stripe")(
   "sk_test_51QVeoJCplrVSllH3ypzXCTMzCKE0HfCc14DxJU5MXR1N5faMHOrPgYzAfvJoXSRltf3KEjYk2M8CClBAELRFFX4W00S5z9lilS"
 );
-
-const __dirname = path.resolve();
 
 const app = express();
 
